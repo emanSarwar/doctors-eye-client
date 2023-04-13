@@ -1,0 +1,6 @@
+.navbarcss{
+    /* position: -webkit-sticky;  */
+    /* Safari */
+  position: fixed;
+  top: 0;
+}
