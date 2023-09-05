@@ -13,19 +13,19 @@ const Navbar = () => {
     }
 
     const menuItems = <React.Fragment>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/appointment">Appointment</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <button  className="btn btn-outline btn-accent normal-case text-xl"><Link to="/">Home</Link></button>
+        <li><Link className="btn btn-outline btn-accent normal-case text-xl" to="/appointment">Appointment</Link></li>
+        <li><Link className="btn btn-outline btn-accent normal-case text-xl" to="/about">About</Link></li>
         {user?.uid ?
             <>
-                <li><Link to="/dashboard">Dashboard</Link></li>
-                <li><button onClick={handleLogOut}>Sign out</button></li>
+                <li><Link className="btn btn-outline btn-accent normal-case text-xl" to="/dashboard">Dashboard</Link></li>
+                <li><button className="btn btn-outline btn-accent normal-case text-xl" onClick={handleLogOut}>Sign out</button></li>
             </>
-            : <li><Link to="/login">Login</Link></li>}
+            : <button className="btn btn-outline btn-accent normal-case text-xl"><Link to="/login">Login</Link></button>}
     </React.Fragment>
 
     return (
-        <div className="navbarcss navbar bg-base-100 flex justify-between">
+        <div style={{color: 'white', backgroundColor: 'mediumaquamarine'}} className="navbarcss navbar bg-base-100 flex justify-between">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-ghost normal-case text-xl">Doctors Portal</Link>
+                <Link to="/" className="btn btn-outline btn-accent normal-case text-xl">Doctors Portal</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

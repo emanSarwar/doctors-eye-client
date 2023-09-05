@@ -37,14 +37,14 @@ const Services = () => {
   ];
   return (
     <div className="services-container p-5">
-      <h2 className="text-5xl text-center font-bold text-primary">Our Services</h2>
+      <h2 style={{color: "bisque"}} className="text-5xl text-center font-bold">Our Services</h2>
       <div className="grid gap-6 p-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {serviceInfo.map((teeth) => (
           <Service key={teeth.id} teeth={teeth}></Service>
         ))}
       </div>
       <div className="grid pb-3 place-items-center">
-        <button onClick={handleClick} className="btn w-96 btn-warning">
+        <button onClick={handleClick} className="btn w-96 btn-outline btn-danger">
           Get All Services
         </button>
       </div>

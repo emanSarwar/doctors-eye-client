@@ -8,7 +8,7 @@ const Service = ({teeth}) => {
       <figure>
         <img className="rounded-lg" src={img} alt="Shoes" />
       </figure>
-      <div className="card-body">
+      <div  className="card-body serv-body">
         <h2 className="text-2xl font-bold text-center">{name}</h2>
         <p className="text-justify">{description}</p>
         

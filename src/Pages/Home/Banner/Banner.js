@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="hero mt- bg-base-200 bg-color">
+    <div className="hero bg-base-200 bg-color">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={Banner1} className="max-w-sm rounded-lg" alt="" />
         <div>
@@ -15,7 +15,7 @@ const Banner = () => {
             excellent customer service and friendly support. We always keep an eye on the latest trends in the medical world and put our
             customers' wishes first. That is why we have satisfied our patients all over the USA. The interests of our patients are always top priority for us, so we hope you will enjoy our services as much as we enjoy making them available to you.
           </p>
-          <button className="btn btn-info text-white"><Link to="/appointment">Get Started</Link></button>
+          <button className="btn btn-outline btn-primary text-white"><Link to="/appointment">Get Started</Link></button>
           {/* <Link to="/about">About</Link> */}
         </div>
       </div>

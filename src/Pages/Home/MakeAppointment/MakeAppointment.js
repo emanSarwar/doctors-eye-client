@@ -24,7 +24,7 @@ const MakeAppointment = () => {
           <p className="py-6 text-2xl">
             There are so many doctors to prescribe you. If you want to get any type of service. Please! confirm and pay for the services.
           </p>
-          <button onClick={handleClick} className="btn btn-primary">Go to Appointment Page</button>
+          <button onClick={handleClick} className="btn btn-outline btn-primary">Go to Appointment Page</button>
           
         </div>
       </div>

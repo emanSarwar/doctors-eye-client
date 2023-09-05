@@ -3,6 +3,7 @@ import Review from "./Review";
 import Review1 from './review-image/reviewImg1.png';
 import Review2 from './review-image/reviewImg2.png';
 import Review3 from './review-image/reviewImg3.png';
+import './testimonial.css'
 
 const Testimonial = () => {
   const reviews = [
@@ -34,9 +35,9 @@ const Testimonial = () => {
     }
   ];
   return (
-    <section className="p-5">
+    <section className="test-imonial p-5">
       <div>
-        <h2 className="text-center text-4xl font-bold">Patients Review</h2>
+        <h2 className="text-center patients-review text-4xl font-bold">Patients Review</h2>
       </div>
       <div className="grid gap-6 p-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {reviews.map(review =><Review 
