@@ -3,7 +3,7 @@ import React from "react";
 const AppointmentOption = ({ appointmentCollection, setTreatment }) => {
   const { name, price, slots } = appointmentCollection;
   return (
-    <div className="card shadow-xl">
+    <div className="card bg-teal-900 shadow-xl">
       <div className="card-body text-center">
         <h2 className="text-2xl text-secondary font-bold text-center">{name}</h2>
         <p>{slots.length > 0 ? slots[0] : "Try Another day"}</p>
@@ -17,7 +17,7 @@ const AppointmentOption = ({ appointmentCollection, setTreatment }) => {
           <label
             disabled={slots.length === 0}
             htmlFor="booking-modal"
-            className="btn btn-primary text-white"
+            className="btn btn-primary bg-emerald-500 text-white"
             onClick={() => setTreatment(appointmentCollection)}
           >
             Book Appointment

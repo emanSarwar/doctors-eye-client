@@ -7,7 +7,7 @@ import chair from './appointmentbanner.jpg'
 const AppointmentBanner = ({selectedDate, setSelectedDate}) => {
     
     return (
-        <header className='my-6'>
+        <header>
             <div className="hero">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={chair} alt="doctors chair" className="max-w-sm rounded-lg shadow-2xl" />

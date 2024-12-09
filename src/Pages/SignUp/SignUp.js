@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import useToken from "../../hooks/useToken";
+import "./signup.css"
 
 const SignUp = () => {
   const {
@@ -59,7 +60,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="h-[800px] flex justify-center items-center">
+    <div className="h-[800px] flex justify-center signup-design items-center">
       <div className="w-96 p-7">
         <h2 className="text-xl text-center">Sign Up</h2>
         <form onSubmit={handleSubmit(handleSignUp)}>
@@ -73,7 +74,7 @@ const SignUp = () => {
               {...register("name", {
                 required: "Name is Required",
               })}
-              className="input input-bordered w-full max-w-xs"
+              className="input text-bg input-bordered w-full max-w-xs"
             />
             {errors.name && <p className="text-red-500">{errors.name.message}</p>}
           </div>
@@ -87,7 +88,7 @@ const SignUp = () => {
               {...register("email", {
                 required: true,
               })}
-              className="input input-bordered w-full max-w-xs"
+              className="input text-bg input-bordered w-full max-w-xs"
             />
             {errors.email && <p className="text-red-500">{errors.email.message}</p>}
           </div>
@@ -103,21 +104,21 @@ const SignUp = () => {
                 minLength: { value: 6, message: "Password must be 6 characters long" },
                 pattern: { value: /(?=.*[a-z])(?=.*[0-9])/, message: "Password must have  number and special characters" },
               })}
-              className="input input-bordered w-full max-w-xs"
+              className="text-bg input input-bordered w-full max-w-xs"
             />
             {errors.password && <p className="text-red-500">{errors.password.message}</p>}
           </div>
-          <input className="btn btn-accent w-full mt-4" value="Sign Up" type="submit" />
+          <input className="btn btn-outline btn-primary w-full mt-4" value="Sign Up" type="submit" />
           {signUpError && <p className="text-red-600">{signUpError}</p>}
         </form>
         <p>
           Already have an account{" "}
-          <Link className="text-secondary" to="/login">
+          <Link className="text-primary" to="/login">
             Please Login
           </Link>
         </p>
-        <div className="divider">OR</div>
-        <button className="btn btn-outline w-full">CONTINUE WITH GOOGLE</button>
+        {/* <div className="divider">OR</div>
+        <button className="btn btn-outline btn-primary w-full">CONTINUE WITH GOOGLE</button> */}
       </div>
     </div>
   );

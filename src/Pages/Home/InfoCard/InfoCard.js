@@ -4,7 +4,7 @@ import "./InfoCard.css"
 const InfoCard = ({ card }) => {
   const { name, description, icon } = card;
   return (
-    <div className="card card-side bg-base-100 shadow-xl info-part">
+    <div className="card card-side bg-cyan-800 shadow-xl ">
       <figure>
         <img src={icon} alt="" />
       </figure>

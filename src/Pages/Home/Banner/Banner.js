@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 bg-color">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={Banner1} className="max-w-sm rounded-lg" alt="" />
+    <div className="hero bg-teal-900">
+      <div className="hero-content  flex-col md:flex-row-reverse">
+        <img src={Banner1} className=" rounded-lg w-full md:w-1/2" alt="" />
         <div>
           <h1 className="text-5xl font-bold">Medical Services Zone!</h1>
           <p className="py-6 text-2xl text-justify">

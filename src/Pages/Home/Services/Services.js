@@ -36,7 +36,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="services-container p-5">
+    <div className="bg-emerald-900 p-5">
       <h2 style={{color: "bisque"}} className="text-5xl text-center font-bold">Our Services</h2>
       <div className="grid gap-6 p-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {serviceInfo.map((teeth) => (

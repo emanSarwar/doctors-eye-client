@@ -35,11 +35,11 @@ const Testimonial = () => {
     }
   ];
   return (
-    <section className="test-imonial p-5">
+    <section className="justify bg-teal-600 p-5 ">
       <div>
         <h2 className="text-center patients-review text-4xl font-bold">Patients Review</h2>
       </div>
-      <div className="grid gap-6 p-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className=" grid gap-6 p-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {reviews.map(review =><Review 
         key={review.id} 
         review={review}></Review>
