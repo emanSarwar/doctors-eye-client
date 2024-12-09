@@ -63,7 +63,7 @@ const Navbar = () => {
             </svg>
           </label>
           {/* absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none */}
-          <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
           <ul  role="none" tabIndex={1} className=" py-1 menu menu-compact dropdown-content mt-3 p-2 shadow bg-teal-700 rounded-box w-52">
             {menuItems}
           </ul>
